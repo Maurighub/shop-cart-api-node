@@ -1,4 +1,4 @@
-import { SetupServer } from "@src/app";
+import { SetupServer } from '@src/app';
 
 const Server = new SetupServer(3000);
 Server.init();

@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { resolve } = require('path');
 const root = resolve(__dirname);
 
@@ -11,6 +12,6 @@ module.exports = {
   moduleNameMapper: {
     '@config/(.*)': '<rootDir>/config/$1',
     '@src/(.*)': '<rootDir>/src/$1',
-    '@test/(.*)': '<rootDir>/tests/$1'
-  }
+    '@test/(.*)': '<rootDir>/tests/$1',
+  },
 };

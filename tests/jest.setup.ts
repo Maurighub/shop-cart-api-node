@@ -1,6 +1,6 @@
 
-import supertest from "supertest";
-import { SetupServer } from "../src/app";
+import supertest from 'supertest';
+import { SetupServer } from '../src/app';
 
 const server = new SetupServer();
 server.init();
