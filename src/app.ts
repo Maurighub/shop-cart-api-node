@@ -4,7 +4,7 @@ import { Server } from "@overnightjs/core";
 import { Application } from 'express';
 import bodyParser, { json } from "body-parser";
 import morgan from "morgan";
-//import { InitController } from "@src/controllers/index";
+import { InitController } from "@src/controllers/index";
 import logger from "@src/lib/logger";
 //import { slower } from "@src/middlewares/limiters/slower";
 
@@ -31,8 +31,8 @@ export class SetupServer extends Server {
 
   private setupController(): void {
     //const productController= new ProductController(); 
-    //const initialController = new InitController();
-    // this.addControllers([initialController]);
+    const initialController = new InitController();
+    this.addControllers([initialController]);
   }
 
   public getApp(): Application {
