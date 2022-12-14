@@ -26,18 +26,23 @@
             ],
             "@test/*": [
                 "./test/*"
-            ]
+            ],
+            "@config/*": [
+                "./config/*"
+            ],
         },
         "rootDirs": [
             "./src",
-            "./test"
+            "./test",
+            "./config"
         ],
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true
     },
     "include": [
         "./src/**/*.ts",
-        "./test/**/*.ts"
+        "./test/**/*.ts",
+        "./config/**/*.ts"
     ],
     "exclude": [
         "./node_modules/*",

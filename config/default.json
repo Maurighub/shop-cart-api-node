@@ -1,0 +1,21 @@
+{
+    "App": {
+        "port": 3000,
+        "database": {
+            "MONGO_URL": " "
+        },
+        "logger": {
+            "enabled": true,
+            "level": "info"
+        }
+    },
+    "Limiter": {
+        "window": 1200000,
+        "max": 10
+    },
+    "SlowDown": {
+        "windowMs": 900000,
+        "delayAfter": 500,
+        "delay": 10
+    }
+}
